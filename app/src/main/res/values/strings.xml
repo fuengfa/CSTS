@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CSTS</string>
+    <string name="myName">John Doe</string>
+    <string name="myprofile">My Profile</string>
+    <string name="setting">Setting</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="open">Navbar</string>
+    <string name="close">Navbar</string>
+    <string name="agora_app_id">ba804cdd96e0425ea48202a924e2de9d</string>
+</resources>

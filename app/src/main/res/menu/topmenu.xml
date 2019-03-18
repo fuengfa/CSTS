@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title=""
+        android:id="@+id/videocallTop"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_videocam_black_24dp"
+        />
+    <item
+        android:title=""
+        android:id="@+id/captureTop"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_crop_free_black_24dp"
+        />
+</menu>

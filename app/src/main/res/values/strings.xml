@@ -1,10 +1,18 @@
 <resources>
-    <string name="app_name">CSTS</string>
-    <string name="myName">John Doe</string>
+    <string name="app_name">CTS</string>
+    <string name="myName">Bog Bog</string>
     <string name="myprofile">My Profile</string>
     <string name="setting">Setting</string>
     <string name="editprofile">Edit Profile</string>
     <string name="open">Navbar</string>
     <string name="close">Navbar</string>
     <string name="agora_app_id">ba804cdd96e0425ea48202a924e2de9d</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgetUser">Forgot username or password?</string>
+    <string name="about">About</string>
+    <string name="login">Login</string>
+    <string name="communi">Communication</string>
+    <string name="tec">for Technical Support</string>
+
 </resources>

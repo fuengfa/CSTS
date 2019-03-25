@@ -86,9 +86,8 @@ public class VideoChatViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 b = ScreenShot.takescreenshotOfRootView(image);
-                Bitmap b2= Bitmap.createBitmap(b,0,210,1080,1535);
                 intent = new Intent(VideoChatViewActivity.this,snapview.class);
-                intent.putExtra("KEY",createImageFromBitmap(b2));
+                intent.putExtra("KEY",createImageFromBitmap(b));
                 startActivity(intent);
             }
             public String createImageFromBitmap(Bitmap bitmap) {

@@ -4,5 +4,11 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorwhite">#FFFFFF</color>
-    <color name="colorgrey">#40C8C8C8</color>
+    <color name="colorgrey">#444444</color>
+    <color name="colorlightgrey">#6d696a</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorlightblue">#00ccff</color>
+    <color name="colorsoftlightblue">#b3f0ff</color>
+    <color name="colormychatmessage">#cecece</color>
+
 </resources>

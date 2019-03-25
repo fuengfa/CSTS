@@ -45,11 +45,19 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
     private  Bitmap b;
     private Intent intent;
     private String fileName;
+    private Intent intentContact;
+    private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        intentContact = getIntent();
+        userName = intentContact.getExtras().getString("KEY");
+        setTitle(userName);
+
+
         dl = (DrawerLayout)findViewById(R.id.dl);
         abdt = new ActionBarDrawerToggle(this,dl,R.string.open,R.string.close);
         abdt.setDrawerIndicatorEnabled(true);
@@ -80,7 +88,6 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
         messageAdapter = new MessageAdapter(this);
         messagesView = (ListView) findViewById(R.id.messages_view);
         messagesView.setAdapter(messageAdapter);
-
         MemberData data = new MemberData(getRandomName(), getRandomColor());
 
         scaledrone = new Scaledrone(channelID, data);
@@ -185,15 +192,14 @@ public class MainActivity extends AppCompatActivity implements RoomListener {
         int id = item.getItemId();
         switch (id){
             case R.id.videocallTop:
-                 intentvideocall = new Intent(MainActivity.this,VideoChatViewActivity.class);
+                intentvideocall = new Intent(MainActivity.this,VideoChatViewActivity.class);
                 intentvideocall.putExtra(EXTRA_MESSAGE, "viedeochatactivity show");
                 startActivity(intentvideocall);
                 return false;
             case R.id.captureTop:
                 b = ScreenShot.takescreenshotOfRootView(imageSnap);
-                Bitmap b2= Bitmap.createBitmap(b,0,210,1080,1595);
                 intent = new Intent(MainActivity.this,snapview.class);
-                intent.putExtra("KEY",createImageFromBitmap(b2));
+                intent.putExtra("KEY",createImageFromBitmap(b));
                 startActivity(intent);
                 return false;
             default:return abdt.onOptionsItemSelected(item);
